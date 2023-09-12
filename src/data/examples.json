@@ -1,0 +1,90 @@
+[
+  {
+    "text": "Sender: John.Doe@work.com | Subject: Quarterly Report Update | Message: Dear team, Please find the attached quarterly report for your review. It contains the detailed statistics and analysis for the last quarter. We will be discussing this in our next meeting. Regards, John.",
+    "label": "Work"
+  },
+  {
+    "text": "Sender: project.team@company.com | Subject: Project Update Meeting | Message: Hello Team, We are having a project update meeting next Wednesday. Please ensure to go through the project documents before the meeting. Regards, Project Team.",
+    "label": "Work"
+  },
+  {
+    "text": "Sender: hr@company.com | Subject: New Employee Onboarding | Message: Dear All, We are welcoming new members to our team next week. Please find the onboarding schedule attached. Let's give them a warm welcome. Thank you, HR.",
+    "label": "Work"
+  },
+  {
+    "text": "Sender: admin@company.com | Subject: Office Maintenance Notice | Message: Dear Employees, The office will undergo maintenance this weekend. Please ensure to backup all your necessary data before leaving on Friday. Regards, Admin.",
+    "label": "Work"
+  },
+  {
+    "text": "Sender: finance@company.com | Subject: Salary Update | Message: Dear Employee, We are glad to inform you that there will be a salary increment effective from next month. Please find the details attached. Regards, Finance Team.",
+    "label": "Work"
+  },
+  {
+    "text": "Sender: mom@example.com | Subject: Family Dinner This Weekend | Message: Dear Sweetheart, Just a reminder that we are having a family dinner this weekend. Looking forward to seeing you. Love, Mom.",
+    "label": "Personal"
+  },
+  {
+    "text": "Sender: friend@example.com | Subject: Movie Night | Message: Hey! How about a movie night this Friday? I heard there's a great new movie in the cinema. Let me know if you're free. Cheers!",
+    "label": "Personal"
+  },
+  {
+    "text": "Sender: sibling@example.com | Subject: Birthday Gift Ideas | Message: Hey, I am thinking of getting a surprise gift for Dad's birthday. Do you have any suggestions? Let's discuss. Love, [Sibling's name].",
+    "label": "Personal"
+  },
+  {
+    "text": "Sender: partner@example.com | Subject: Vacation Planning | Message: Hi Love, I was thinking we could plan a vacation next month. Let's sit down and discuss the places we can visit. Can't wait! Love, [Partner's name].",
+    "label": "Personal"
+  },
+  {
+    "text": "Sender: childhoodfriend@example.com | Subject: Long Time No See | Message: Hello! It has been so long since we caught up. I am in town next week. Let's meet up and reminisce about old times. Can't wait to see you! Regards, [Friend's name].",
+    "label": "Personal"
+  },
+  {
+    "text": "Sender: newsletter@techblog.com | Subject: Weekly Tech Updates | Message: Hello Subscriber, Here is your weekly dose of the latest happenings in the tech world. Don't miss out on the top stories from this week. Click here to read more.",
+    "label": "Subscriptions"
+  },
+  {
+    "text": "Sender: updates@fashionhub.com | Subject: Latest Fashion Trends | Message: Dear Fashionista, Stay ahead in the fashion game with our latest collection. Click here to explore the newest trends in the fashion world.",
+    "label": "Subscriptions"
+  },
+  {
+    "text": "Sender: alerts@newsportal.com | Subject: Daily News Alert | Message: Dear Reader, Here is your daily news alert with the top stories from around the world. Stay updated with the latest events happening globally.",
+    "label": "Subscriptions"
+  },
+  {
+    "text": "Sender: newsletter@healthblog.com | Subject: Weekly Health Tips | Message: Hello Health Enthusiast, Start your week with our health tips and advice. Click here to read the latest article on how to maintain a healthy lifestyle.",
+    "label": "Subscriptions"
+  },
+  {
+    "text": "Sender: updates@travelblog.com | Subject: Travel Destinations Alert | Message: Dear Traveler, Discover the must-visit destinations this season. Click here to explore the top travel destinations and plan your next adventure.",
+    "label": "Subscriptions"
+  },
+  {
+    "text": "Sender: noreply@bank.com | Subject: Monthly Statement | Message: Dear Customer, Your monthly statement is now available in your online account. Please login to view the details. Regards, Your Bank.",
+    "label": "Services"
+  },
+  {
+    "text": "Sender: support@telecom.com | Subject: Service Update | Message: Dear Customer, We are conducting a service update in your area tomorrow. There might be a temporary disruption in the service. We apologize for any inconvenience. Regards, Your Telecom Provider.",
+    "label": "Services"
+  },
+  {
+    "text": "Sender: notifications@utility.com | Subject: Utility Bill | Message: Dear Customer, Your monthly utility bill is now available. Please make the payment before the due date to avoid late fees. Regards, Your Utility Provider.",
+    "label": "Services"
+  },
+  {
+    "text": "Sender: support@internetprovider.com | Subject: Internet Service Upgrade | Message: Dear Customer, We are upgrading our services in your area. You might experience faster internet speeds from next week. Thank you for choosing our service. Regards, Your Internet Provider.",
+    "label": "Services"
+  },
+  {
+    "text": "Sender: alerts@insurance.com | Subject: Policy Renewal Reminder | Message: Dear Policy Holder, This is a reminder that your policy is due for renewal next month. Please contact us to renew your policy and continue enjoying the benefits. Regards, Your Insurance Provider.",
+    "label": "Services"
+  },
+  {
+    "text": "Sender: no-reply@netflix.com | Subject: Your Monthly Netflix Update | Message: Dear Subscriber, Discover a range of new shows and movies added this month. Don't forget to check out the top trending series exclusively on Netflix. Happy streaming! Regards, Netflix Team.",
+    "label": "Services"
+  },
+  {
+    "text": "Sender: order-update@amazon.com | Subject: Your Amazon Order Update | Message: Dear Customer, Your recent order #123456789 has been shipped and is expected to arrive on DATE. You can track the status of your order in your Amazon account. Happy shopping! Regards, Amazon Support.",
+    "label": "Services"
+  }
+]
