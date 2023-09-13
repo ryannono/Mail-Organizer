@@ -1,5 +1,5 @@
 // External librairies
-import * as Imap from 'node-imap';
+import { Box } from 'node-imap';
 
 // Local
 import imap from '../../imap';
@@ -9,7 +9,7 @@ import imap from '../../imap';
  * @param cb - Callback function to execute once the inbox is opened.
  */
 export default function openInbox(
-  cb: (error: Error, mailbox: Imap.Box) => void,
+  cb: (error: Error, mailbox: Box) => void,
   mailboxName = 'INBOX'
 ) {
   imap.openBox(mailboxName, false, cb);
