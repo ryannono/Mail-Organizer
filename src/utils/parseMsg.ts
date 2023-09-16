@@ -90,35 +90,30 @@ function cleanTextContent(buffer: string): string {
 }
 
 /**
- * Asynchronously parses an IMAP message, extracting and formatting the
- * relevant information including the UID and the content required for
- * classification. The function processes the message body to clean and
- * structure the content into a format ready for classification.
+ * Asynchronously parses an ImapMessage object to extract and clean up the email
+ * content, including the sender, subject, and message body. The message body is
+ * cleaned up to remove base64 encoded strings, HTML entities, and other unwanted
+ * characters or strings. Once the message has been parsed, it returns a formatted
+ * string with the sender, subject, and message body.
  *
  * @async
  * @function
- * @param {ImapMessage} msg - The IMAP message to parse.
+ * @param {ImapMessage} msg - An instance of ImapMessage that needs to be parsed.
  *
- * @returns {Promise<ParsedMsg>} A promise that resolves with an
- * object containing the message UID and a formatted string representing
- * the classification input, which contains the sender, subject, and body
- * message.
- *
- * @throws Will log any error that occurs during the parsing process to
- * the console.
+ * @returns {Promise<string>} A promise that resolves with a string containing the
+ * cleaned up sender information, subject, and message body.
  *
  * @example
  *
  * try {
- *   const parsedMessage = await parseMsg(imapMessage);
+ *   const parsedMessage = await parseMsg(imapMessageInstance);
  *   console.log('Message parsed successfully:', parsedMessage);
  * } catch (error) {
  *   console.error('Failed to parse message:', error);
  * }
  */
-export default async function parseMsg(msg: ImapMessage): Promise<ParsedMsg> {
+export default async function parseMsg(msg: ImapMessage): Promise<string> {
   return new Promise((resolve) => {
-    let uid: number | null = null;
     let header: ImapHeader | null = null;
     let body: string = '';
 
@@ -137,19 +132,12 @@ export default async function parseMsg(msg: ImapMessage): Promise<ParsedMsg> {
       });
     });
 
-    msg.on('attributes', (attrs) => {
-      uid = attrs.uid;
-    });
-
-    msg.once('end', () => {
-      const output = {
-        uid,
-        classificationInput: `Sender: ${
-          header?.from[0] ?? 'unknown'
-        } | Subject: ${header?.subject[0] ?? 'unknown'} | Message: ${body}`,
-      };
-
-      resolve(output);
-    });
+    msg.once('end', () =>
+      resolve(
+        `Sender: ${header?.from[0] ?? 'unknown'} | Subject: ${
+          header?.subject[0] ?? 'unknown'
+        } | Message: ${body}`
+      )
+    );
   });
 }

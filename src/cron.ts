@@ -1,6 +1,6 @@
 import * as cron from 'node-cron';
-import organizeMail from './organizeMail';
+import mailOrganizer from './MailOrganizer';
 
 cron.schedule('*/5 * * * *', async () => {
-  organizeMail();
+  mailOrganizer.organize();
 });
