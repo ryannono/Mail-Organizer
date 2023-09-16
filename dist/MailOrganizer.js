@@ -34,9 +34,12 @@ class MailOrganizer {
      * @param {string} email - The email address to access the IMAP server.
      * @param {string} password - The password associated with the email address.
      * @param {string} host - The host address of the IMAP server.
-     * @param {string} classifyApiKey - The API key for the classification service.
-     * @param {number} [port=993] - The port number of the IMAP server (default is 993).
-     * @param {boolean} [tls=true] - Indicates whether to use TLS for the connection (default is true).
+     * @param {string} classifyApiKey - The API key for the classification
+     * service.
+     * @param {number} [port=993] - The port number of the IMAP server (default is
+     * 993).
+     * @param {boolean} [tls=true] - Indicates whether to use TLS for the
+     * connection (default is true).
      */
     constructor(email, password, host, classifyApiKey, port = 993, tls = true) {
         this.classifyApiKey = classifyApiKey;
