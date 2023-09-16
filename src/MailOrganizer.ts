@@ -22,15 +22,15 @@ import getClassifications from './utils/getClassifications';
  * organizer.organize('INBOX').then(() => console.log('Mail organized'));
  */
 class MailOrganizer {
-  imapClient: Imap;
+  private imapClient: Imap;
 
-  messageUIDs: number[] = [];
+  private messageUIDs: number[] = [];
 
-  messages: string[] = [];
+  private messages: string[] = [];
 
-  classifyApiKey: string;
+  private classifyApiKey: string;
 
-  classifyApiMaxInput = 96;
+  private classifyApiMaxInput = 96;
 
   /**
    * Creates an instance of the `MailOrganizer` class.
